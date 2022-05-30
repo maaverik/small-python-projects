@@ -41,6 +41,7 @@ def get_yt_credentials() -> Flow.credentials:
         else:
             print('Fetching New Tokens...')
             flow = InstalledAppFlow.from_client_secrets_file(
+                # get this from the google dev console and rename to client_secret.json
                 'client_secret.json',
                 scopes=[
                     'https://www.googleapis.com/auth/youtube.readonly'
